@@ -1,0 +1,199 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x11fbbdFE46fA943FA4fd6f9270F7A9eF9894186b",
+    "txHash": "0x9aa0a66762d165278704e541c2d22974516145b0ea9d60e62177d5e75dcb609f"
+  },
+  "proxies": [
+    {
+      "address": "0xec3a158883bDAdE868C86a9B6f8B8206075B46ee",
+      "txHash": "0x43aaf701b361c3cc88d590cadd034198fad708895c20d8c74152480420571359",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "71259a552fc2c9d9186e5b8336af3c61c3b1893e0c5d355d18e86ca8bc4e8bf2": {
+      "address": "0x36ec9C301d788657A738570B859929Aa96eE7Ea0",
+      "txHash": "0x2520e31647db5b794272a295066aaa8b2b2dc1fe783c8a8acbd195eefbb481ad",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "EinsteinFarming",
+            "label": "poolInfo",
+            "type": "t_mapping(t_contract(IBEP20)1130,t_struct(PoolInfo)1158_storage)",
+            "src": "../project:/contracts/EinsteinFarming.sol:69"
+          },
+          {
+            "contract": "EinsteinFarming",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_mapping(t_contract(IBEP20)1130,t_struct(UserInfo)1169_storage))",
+            "src": "../project:/contracts/EinsteinFarming.sol:71"
+          },
+          {
+            "contract": "EinsteinFarming",
+            "label": "timeBound",
+            "type": "t_uint256",
+            "src": "../project:/contracts/EinsteinFarming.sol:72"
+          },
+          {
+            "contract": "EinsteinFarming",
+            "label": "userTimeBounds",
+            "type": "t_mapping(t_address,t_mapping(t_contract(IBEP20)1130,t_uint256))",
+            "src": "../project:/contracts/EinsteinFarming.sol:73"
+          }
+        ],
+        "types": {
+          "t_mapping(t_contract(IBEP20)1130,t_struct(PoolInfo)1158_storage)": {
+            "label": "mapping(contract IBEP20 => struct EinsteinFarming.PoolInfo)"
+          },
+          "t_contract(IBEP20)1130": {
+            "label": "contract IBEP20"
+          },
+          "t_struct(PoolInfo)1158_storage": {
+            "label": "struct EinsteinFarming.PoolInfo",
+            "members": [
+              {
+                "label": "lpToken",
+                "type": "t_contract(IBEP20)1130"
+              },
+              {
+                "label": "rewardToken",
+                "type": "t_contract(IBEP20)1130"
+              },
+              {
+                "label": "rewardRate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardInterval",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockPeriod",
+                "type": "t_uint256"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalFarmedAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_contract(IBEP20)1130,t_struct(UserInfo)1169_storage))": {
+            "label": "mapping(address => mapping(contract IBEP20 => struct EinsteinFarming.UserInfo))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_contract(IBEP20)1130,t_struct(UserInfo)1169_storage)": {
+            "label": "mapping(contract IBEP20 => struct EinsteinFarming.UserInfo)"
+          },
+          "t_struct(UserInfo)1169_storage": {
+            "label": "struct EinsteinFarming.UserInfo",
+            "members": [
+              {
+                "label": "farmedAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "farmingStartTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "hasFarmed",
+                "type": "t_bool"
+              },
+              {
+                "label": "isFarming",
+                "type": "t_bool"
+              },
+              {
+                "label": "oldReward",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_mapping(t_contract(IBEP20)1130,t_uint256))": {
+            "label": "mapping(address => mapping(contract IBEP20 => uint256))"
+          },
+          "t_mapping(t_contract(IBEP20)1130,t_uint256)": {
+            "label": "mapping(contract IBEP20 => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}
